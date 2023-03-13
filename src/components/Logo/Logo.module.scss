@@ -1,0 +1,9 @@
+@import "../../scss/variables";
+
+.logo {
+  display: flex;
+  color: $orange;
+  font-size: 35px;
+  align-items: center;
+  font-weight: 700;
+}

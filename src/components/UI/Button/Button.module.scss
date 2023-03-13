@@ -1,0 +1,13 @@
+@import "../../../scss/variables";
+
+.button {
+  display: block;
+  background-color: $orange;
+  color: $white;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+}

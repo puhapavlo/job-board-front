@@ -1,0 +1,23 @@
+@import "../../../scss/variables";
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  li {
+    &:not(:last-child) {
+      padding-right: 40px;
+    }
+    a {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 20px;
+      color: $black;
+      &:hover {
+        transition: .4s ease-in-out;
+        color: $orange;
+      }
+    }
+  }
+}

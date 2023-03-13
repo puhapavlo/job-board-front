@@ -1,0 +1,14 @@
+@import "../../../scss/variables";
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &_login {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: $black;
+    padding-right: 30px;
+  }
+}
