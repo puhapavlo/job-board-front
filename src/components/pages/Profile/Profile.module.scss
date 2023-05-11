@@ -1,0 +1,35 @@
+@import '../../../scss/variables';
+
+.profile {
+  padding: 100px 0;
+  background-color: $main-background;
+}
+
+.title {
+  text-align: center;
+  color: $orange;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 43px;
+}
+
+.email {
+  font-size: 34px;
+}
+
+.add_job, .add_resume {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  a:not(:last-child) {
+    margin-right: 15px;
+  }
+}

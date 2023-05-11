@@ -1,7 +1,7 @@
 @import "../../../scss/variables";
 
-.button {
-  display: block;
+.button, button {
+  display: inline-block;
   background-color: $orange;
   color: $white;
   font-weight: 700;
@@ -10,4 +10,7 @@
   border-radius: 30px;
   text-decoration: none;
   text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }

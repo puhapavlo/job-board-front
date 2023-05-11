@@ -1,0 +1,22 @@
+@import '../../../../scss/variables';
+
+.title {
+  text-align: center;
+  margin: 50px 0 20px 0;
+}
+
+.job_link, .resume_link {
+  a {
+    color: $black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 35px;
+  }
+}
+
+.operations {
+  display: flex;
+  a:first-child {
+    margin-right: 15px;
+  }
+}

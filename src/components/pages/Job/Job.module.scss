@@ -1,0 +1,49 @@
+@import "../../../scss/variables";
+
+.job {
+  background-color: $main-background;
+  padding: 100px 0;
+}
+
+.salary {
+  &:before {
+    font-size: 22px;
+    content: '💵 $';
+  }
+}
+
+.company {
+  &:before {
+    font-size: 22px;
+    content: '🏢 ';
+  }
+}
+
+.location {
+  &:before {
+    font-size: 22px;
+    content: '📍 ';
+  }
+}
+
+.type {
+  &:before {
+    font-size: 22px;
+    content: '💼 ';
+  }
+}
+
+.category {
+  &:before {
+    font-size: 22px;
+    content: '📊 ';
+  }
+}
+
+.button {
+  margin: 0 auto;
+}
+
+.attached {
+  color: $black;
+}

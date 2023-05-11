@@ -1,0 +1,13 @@
+.create_profile {
+  margin-top: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description {
+  max-width: 625px;
+  p {
+    padding-bottom: 50px;
+  }
+}

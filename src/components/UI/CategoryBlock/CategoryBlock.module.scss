@@ -1,0 +1,30 @@
+@import "../../../scss/variables";
+.category_block {
+  display: flex;
+  align-items: center;
+  padding: 35px 35px 35px 25px;
+  height: 160px;
+  width: 330px;
+  border-radius: 30px;
+  background-color: $white;
+  color: $black;
+  text-decoration: none;
+  margin-bottom: 45px;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $orange;
+    img {
+      filter: brightness(0) invert(1);;
+    }
+  }
+}
+
+.category {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: left;
+}
+
+.logo {
+  margin-right: 30px;
+}

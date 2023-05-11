@@ -1,20 +1,14 @@
-import './App.css';
-import {Route, Routes} from "react-router-dom";
-import Homepage from "./components/pages/Homepage/Homepage";
+import './App.scss';
 import Header from "./components/Header/Header";
-import LoginForm from "./components/forms/LoginForn/LoginForm";
-import RegisterForm from "./components/forms/RegisterForm/RegisterForm";
+import Footer from "./components/Footer/Footer";
+import Routing from "./components/Routing/Routing";
 
 function App() {
   return (
       <div>
         <Header />
-        <Routes>
-          <Route path="/" element={<Homepage />}>
-            <Route path="/login" element={<LoginForm />} />
-            <Route path="/register" element={<RegisterForm />} />
-          </Route>
-        </Routes>
+        <Routing />
+        <Footer />
       </div>
   );
 }

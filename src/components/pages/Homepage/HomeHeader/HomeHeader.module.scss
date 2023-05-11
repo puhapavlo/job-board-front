@@ -1,0 +1,16 @@
+@import "../../../../scss/variables";
+
+.home_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 75px;
+  background-color: $main-background;
+}
+
+.description {
+  max-width: 670px;
+  p {
+    max-width: 555px;
+  }
+}

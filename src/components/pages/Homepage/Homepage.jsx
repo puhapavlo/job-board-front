@@ -1,11 +1,18 @@
 import React from 'react';
-import Header from "../../Header/Header";
+import styles from './Homepage.module.scss';
+import HomeHeader from "./HomeHeader/HomeHeader";
+import CategoriesBlock from "./CategoriesBlock/CategoriesBlock";
+import Container from "../../Container/Container";
+import CreateProfileBlock from "./CreateProfileBlock/CreateProfileBlock";
 
 const Homepage = () => {
   return (
-      <div>
-        <div>
-        </div>
+      <div className={styles.homepage}>
+        <HomeHeader />
+        <Container>
+          <CategoriesBlock />
+          <CreateProfileBlock />
+        </Container>
       </div>
   );
 };

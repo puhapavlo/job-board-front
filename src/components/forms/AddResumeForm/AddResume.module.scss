@@ -1,0 +1,26 @@
+.add_resume {
+  padding: 100px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > * {
+    margin-bottom: 20px;
+    width: 600px;
+  }
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+  &_input {
+    width: 600px;
+  }
+}
+
+.title {
+  padding-bottom: 30px;
+  text-align: center;
+}

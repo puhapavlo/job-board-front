@@ -4,6 +4,7 @@ import Container from "../Container/Container";
 import styles from "./Header.module.scss"
 import MainMenu from "../menus/MainMenu/MainMenu";
 import LoginMenu from "../menus/LoginMenu/LoginMenu";
+import {useSelector} from "react-redux";
 
 const Header = () => {
   return (

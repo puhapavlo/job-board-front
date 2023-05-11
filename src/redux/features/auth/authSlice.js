@@ -1,12 +1,15 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
+import Cookies from 'js-cookie';
+
+const token = Cookies.get('token') ? Cookies.get('token') : null;
 
 const initialState = {
   loading: false,
   userInfo: {}, // for user object
-  userToken: null, // for storing the JWT
+  token: token, // for storing the JWT
   error: null,
   success: false,
-  isAuthenticated: false,
+  isAuthenticated: token ? true : false,
   // for monitoring the registration process.
 }
 
@@ -17,10 +20,12 @@ const authSlice = createSlice({
     loginSuccess: (state, action) => {
       state.isAuthenticated = true;
       state.token = action.payload;
+      Cookies.set('token', action.payload);
     },
     logoutSuccess: (state) => {
       state.isAuthenticated = false;
       state.token = null;
+      Cookies.remove('token');
     },
   },
   extraReducers: {},

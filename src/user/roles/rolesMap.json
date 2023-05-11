@@ -1,0 +1,6 @@
+{
+  "ROLE_USER": "",
+  "ROLE_ADMIN": "Admin",
+  "ROLE_JOB_SEEKER": "Job Seeker",
+  "ROLE_RECRUITER": "Recruiter"
+}
